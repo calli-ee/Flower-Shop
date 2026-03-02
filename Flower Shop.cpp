@@ -1,5 +1,5 @@
-//username: callie
-//password: 2444666668888888
+//username: admin
+//password: 12345678
 
 #include <iostream>
 #include <fstream>
@@ -43,6 +43,9 @@ void deletee();
 void buy();
 
 int main() {
+	SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+	
 	mainheader();
 	mainMenu();
 
@@ -182,7 +185,7 @@ void mainMenu() {
 					cout<<"\n\t\t\tEnter Password: ";
 					cin>>pass;
 					
-					if (user == "callie" && pass == "2444666668888888") {
+					if (user == "admin" && pass == "12345678") {
 						cout<<"\n\n\t\t\tLogging in ";
 						loadingg();
 						cout<<"\n\n\n\t\t\t\t\t\t\t<< Logged in Successfully. Welcome Admin! >> \n\n";
@@ -1300,4 +1303,5 @@ void buy() {
 			}
 		}
 	}
+
 }
